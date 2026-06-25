@@ -56,11 +56,17 @@ $('#shift').on('click', () => {
     const text = $('#mytext').val();
     const shift = $('#shift').val();
     const decode = $('#decode').prop('checked');
-    $('#results').append(`Text: ${text} <br>`);
-    $('#results').append(`Shift: ${shift} <br>`);
-    $('#results').append(`Decode: ${decode} <br>`);
-    $('#results').append(`${decode ? "Decrypted" : "Encrypted"} Text: ${decode ? caesarsCipher(text, shift, decode) : caesarsCipher(text, shift)} <br>`);
+    if (shift < 0 || shift > 26) {
+        $('#results').append(`Shift must be between 0 and 26 <br>`);
+    } else {
+        $('#results').append(`Text: ${text} <br>`);
+        $('#results').append(`Shift: ${shift} <br>`);
+        $('#results').append(`Decode: ${decode} <br>`);
+        $('#results').append(`${decode ? "Decrypted" : "Encrypted"} Text: ${decode ? caesarsCipher(text, shift, decode) : caesarsCipher(text, shift)} <br>`);
+    }
 });
+
+
 
 // Click Event for Decode Field
 $('#decode').on('click', () => {
