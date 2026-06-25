@@ -50,4 +50,4 @@ Deployed on [GitHub Pages](https://derektypist.github.io/caesars-cipher) at the 
 
 ### Acknowledgements
 
-= [freeCodeCamp](https://www.freecodecamp.org)
+- [freeCodeCamp](https://www.freecodecamp.org)
