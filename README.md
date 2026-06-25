@@ -1,4 +1,5 @@
-# caesars-ciphers
+# Caesar's Ciphers
+
 A Caesar cipher is one of the most simplest and most widely encryption techniques used in cryptography.  It is a type of substitution cipher in which each letter in the plaintext is replaced by a letter with some fixed number of positions along the alphabet.
 
 ## UX
@@ -28,6 +29,18 @@ Uses HTML5, CSS3, JavaScript, Bootstrap 5.3.2 and jQuery 3.7.1.
 To preview, use the command `python3 -m http.server` and press `Enter`.
 
 Once the project is deployed, use the official W3C Validator for HTML and (Jigsaw) Validator for CSS.
+
+**Validator Testing**
+
+- HTML
+    - No errors were found through the official [W3C Validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fderektypist.github.io%2Fcaesars-ciphers%2Findex.html)
+
+- CSS
+    - No errors were found through the official [(Jigsaw) Validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fderektypist.github.io%2Fcaesars-ciphers%2Fcss%2Fstyle.css)
+
+- Link Checker
+    - A report is available through the official [W3C Link Checker](https://validator.w3.org/checklink?uri=https%3A%2F%2Fderektypist.github.io%2Fcaesars-ciphers%2Findex.html&hide_type=all&depth=&check=Check)
+
 
 ## Deployment
 
