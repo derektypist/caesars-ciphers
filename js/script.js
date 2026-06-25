@@ -25,3 +25,27 @@ function caesarsCipher(str, shift, decode=false) {
   
   return decodedMessage;
 }
+
+// Keyup Event for Text Field
+$('#mytext').on('keyup', () => {
+  $('#results').html(``);
+  const text = $('#mytext').val();
+  const shift = $('#shift').val();
+  const decode = $('#decode').prop('checked');
+  $('#results').append(`Text: ${text} <br>`);
+  $('#results').append(`Shift: ${shift} <br>`);
+  $('#results').append(`Decode: ${decode} <br>`);
+  $('#results').append(`${decode ? "Decrypted" : "Encrypted"} Text: ${decode ? caesarsCipher(text,shift,decode) : caesarsCipher(text,shift)} <br>`);
+});
+
+// Keyup Event for Shift Field
+$('#shift').on('keyup', () => {
+  $('#results').html(``);
+  const text = $('#mytext').val();
+  const shift = $('#shift').val();
+  const decode = $('#decode').prop('checked');
+  $('#results').append(`Text: ${text} <br>`);
+  $('#results').append(`Shift: ${shift} <br>`);
+  $('#results').append(`Decode: ${decode} <br>`);
+ $('#results').append(`${decode ? "Decrypted" : "Encrypted"} Text: ${decode ? caesarsCipher(text,shift,decode) : caesarsCipher(text,shift)} <br>`);
+});
