@@ -8,6 +8,7 @@
     <meta name="keywords" content="Cipher, substitution, encode, decode, encryption">
     <title>Caesar's Ciphers</title>
     <!-- Load Styles -->
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,5 +16,29 @@
      <header class="container-fluid text-center">
         <h1>Caesar's Ciphers</h1>
      </header>
+
+     <!-- Set Up Form -->
+      <section class="container-fluid">
+        <form>
+            <div class="form-floating mb-3">
+                <input type="text" id="mytext" class="form-control" title="Enter text" placeholder="Enter text">
+                <label for="mytext">Text</label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input type="number" id="shift" class="form-control" min="0" max="26" value="1">
+                <label for="shift">Shift</label>
+            </div>
+
+            <div class="mb-3">
+                <label for="decode">Decode</label>
+                <input type="checkbox" id="decode" class="form-check-input">
+            </div>
+
+            <div class="d-grid gap-2 d-flex justity-content-center">
+                <button type="reset" id="clearBtn" class="btn btn-warning">Clear</button>
+            </div>
+        </form>
+      </section>
 </body>
 </html>
