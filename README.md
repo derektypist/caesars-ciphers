@@ -15,4 +15,26 @@ In the text field, enter text (e.g. Hello World).  In the shift field, select th
 - As a user, if I enter `oann` with a shift of 9 and the decode box is checked, I expect the message to be `free`.
 - As a user, if I click on the `Clear` button, I expect the information to be cleared.
 
+## Features
 
+Allows the user to enter text and shift.  Selection of encode or decode.
+
+## Technologies
+
+Uses HTML5, CSS3, JavaScript, Bootstrap 5.3.2 and jQuery 3.7.1.
+
+## Testing
+
+To preview, use the command `python3 -m http.server` and press `Enter`.
+
+Once the project is deployed, use the official W3C Validator for HTML and (Jigsaw) Validator for CSS.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/caesars-cipher) at the main branch.
+
+## Credits
+
+### Acknowledgements
+
+= [freeCodeCamp](https://www.freecodecamp.org)
